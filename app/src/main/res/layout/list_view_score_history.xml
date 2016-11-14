@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_turn_table"
+        android:layout_width="133.33dp"
+        android:layout_height="75dp"
+
+        >
+
+        <TextView
+            android:id="@+id/turn_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/currentTurnName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/turn_number"
+            android:layout_toRightOf="@+id/turn_number"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/turn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currentTurnName"
+            android:layout_marginTop="3dp"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/topScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_toEndOf="@+id/RelativeLayout_turn_table"
+        android:layout_toRightOf="@+id/RelativeLayout_turn_table"
+        android:gravity="center_horizontal"
+        android:paddingEnd="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/topCount"
+        android:layout_width="35dp"
+        android:layout_height="75dp"
+        android:layout_toEndOf="@+id/topScore"
+        android:layout_toRightOf="@+id/topScore"
+        android:gravity="center_horizontal"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="10dp"
+        android:text="Top Poison"
+        android:textColor="#C8DDA9"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bottomScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/topCount"
+        android:layout_toRightOf="@+id/topCount"
+        android:gravity="center_horizontal"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="10dp"
+        android:text="Bottom Score"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bottomCount"
+        android:layout_width="26dp"
+        android:layout_height="75dp"
+        android:layout_toEndOf="@+id/bottomScore"
+        android:layout_toRightOf="@+id/bottomScore"
+        android:gravity="center_horizontal"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="10dp"
+        android:text="Bottom Poison"
+        android:textColor="#C8DDA9"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

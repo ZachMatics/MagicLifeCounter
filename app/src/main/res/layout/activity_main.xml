@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zacharymitchell.magiclifecounter.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/button_resume_dice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Displays"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <include layout="@layout/display_top" />
+
+        <include layout="@layout/display_bottom" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_clear_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/image_button_center"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_center_menu" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Menus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/RelativeLayout_menu_center"
+            layout="@layout/menu_center"
+            />
+
+        <include
+            layout="@layout/menu_top"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/RelativeLayout_menu_center"
+            android:layout_centerHorizontal="true" />
+
+        <include
+            layout="@layout/menu_bottom"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RelativeLayout_menu_center"
+            android:layout_centerHorizontal="true" />
+
+
+        <include layout="@layout/menu_numbers" />
+
+        <include layout="@layout/menu_player_names" />
+
+        <include layout="@layout/menu_history" />
+
+        <include layout="@layout/menu_settings" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+    android:id="@+id/black_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_menu_settings"
+    android:layout_width="310dp"
+    android:layout_height="600dp"
+    android:layout_centerInParent="true"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/layout_menu_center"
+    android:orientation="vertical"
+    android:rotation="0"
+    android:visibility="invisible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_toggle_vibration"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Vibration"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_vibration"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="true"
+            android:scaleType="fitXY"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_toggle_toast"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Toast Messages"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_toast"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="true"
+            android:scaleType="fitXY"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_toggle_timer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Turn Timer"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_turn_timer"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="true"
+            android:scaleType="fitXY"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_toggle_names"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Player Names"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_names"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="true"
+            android:scaleType="fitXY"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/button_remove_ads"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/layout_menu_center"-->
+        <!--android:shadowColor="@color/text_shadow"-->
+        <!--android:shadowDx="-10"-->
+        <!--android:shadowDy="-10"-->
+        <!--android:shadowRadius="10"-->
+        <!--android:text="Remove Ads"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:textSize="40sp" />-->
+
+    <Button
+        android:id="@+id/button_rate_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_menu_center"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="-10"
+        android:shadowDy="-10"
+        android:shadowRadius="10"
+        android:text="Rate App"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/email_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="22sp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/app_feedback"
+        android:textColor="#ffffff"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <ImageButton
+            android:id="@+id/image_button_settings_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/list_view_history"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/gradient_history_back_button"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <Button
+            android:id="@+id/button_settings_back"
+            android:layout_width="155dp"
+            android:layout_height="110dp"
+            android:background="#00000000" />
+
+
+        <ImageButton
+            android:id="@+id/image_button_settings_restore"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/list_view_history"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/image_button_settings_back"
+            android:layout_toRightOf="@+id/image_button_settings_back"
+            android:adjustViewBounds="true"
+            android:background="@drawable/gradient_history_trash_button"
+            android:scaleType="fitXY"
+            android:src="@drawable/restore" />
+
+        <Button
+            android:id="@+id/button_settings_restore"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_toEndOf="@+id/button_settings_back"
+            android:layout_toRightOf="@+id/button_settings_back"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

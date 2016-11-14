@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_names"
+    android:layout_width="310dp"
+    android:layout_height="240dp"
+    android:layout_centerInParent="true"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/layout_menu_center"
+    android:rotation="0"
+    android:visibility="gone">
+
+
+    <EditText
+        android:id="@+id/edit_text_top_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_name_outline"
+        android:gravity="center"
+        android:hint="Opponent Name"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#66ffffff"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/edit_text_bottom_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_top_player_name"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_name_outline"
+        android:gravity="center"
+        android:hint="Your Name"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#66ffffff"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/image_button_name_menu_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_text_bottom_player_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_bottom_default_menu_button_theme"
+        android:scaleType="fitXY"
+        android:src="@drawable/back" />
+
+    <Button
+        android:id="@+id/button_name_menu_back"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/edit_text_bottom_player_name"
+        android:background="#00000000" />
+
+    <ImageButton
+        android:id="@+id/image_button_name_menu_reset"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_text_bottom_player_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/image_button_name_menu_back"
+        android:layout_toRightOf="@+id/image_button_name_menu_back"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_bottom_default_menu_button_theme"
+        android:scaleType="fitXY"
+        android:src="@drawable/reset" />
+
+    <Button
+        android:id="@+id/button_name_menu_reset"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/edit_text_bottom_player_name"
+        android:layout_toEndOf="@+id/button_name_menu_back"
+        android:layout_toRightOf="@+id/button_name_menu_back"
+        android:background="#00000000" />
+
+    <ImageButton
+        android:id="@+id/image_button_name_menu_confirm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_text_bottom_player_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/image_button_name_menu_reset"
+        android:layout_toRightOf="@+id/image_button_name_menu_reset"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_bottom_default_menu_button_theme"
+        android:scaleType="fitXY"
+        android:src="@drawable/confirm" />
+
+    <Button
+        android:id="@+id/button_name_menu_confirm"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/edit_text_bottom_player_name"
+        android:layout_toEndOf="@+id/button_name_menu_reset"
+        android:layout_toRightOf="@+id/button_name_menu_reset"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/dead1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/dead2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/dead1"
+        android:layout_marginTop="50dp"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/dead3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/dead2"
+        android:layout_marginTop="50dp"
+        android:background="#00000000" />
+
+</RelativeLayout>

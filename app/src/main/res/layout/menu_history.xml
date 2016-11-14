@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_menu_history"
+    android:layout_width="400dp"
+    android:layout_height="600dp"
+    android:layout_centerInParent="true"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/layout_menu_center"
+    android:rotation="0"
+    android:visibility="invisible">
+
+    <LinearLayout
+        android:id="@+id/history_table_name_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/history_turn_heading"
+            android:text="Turn"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="133dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/history_text_border"/>
+
+        <TextView
+            android:id="@+id/history_first_name_heading"
+            android:layout_width="133dp"
+            android:layout_height="25dp"
+            android:text="User"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:background="@drawable/history_text_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/history_second_name_heading"
+            android:layout_width="133dp"
+            android:layout_height="25sp"
+            android:text="Opponent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/history_text_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/history_table_icons"
+        android:layout_below="@+id/history_table_name_heading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="133.33dp"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/history_heart"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center_vertical"
+            />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_poison"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/history_heart"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_poison"
+            android:scaleType="fitXY"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/list_view_history"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_below="@+id/history_table_icons"
+        android:paddingTop="10dp">
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/backHistory"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/list_view_history"
+        android:layout_marginLeft="62.5dp"
+        android:layout_marginStart="62.5dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_history_back_button"
+        android:scaleType="fitXY"
+        android:src="@drawable/back" />
+
+    <Button
+        android:id="@+id/button_history_back"
+        android:layout_width="133.33dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/list_view_history"
+        android:background="#00000000" />
+
+    <ImageButton
+        android:id="@+id/historyInformation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/list_view_history"
+        android:layout_marginLeft="62.5dp"
+        android:layout_marginStart="62.5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/backHistory"
+        android:layout_toRightOf="@+id/backHistory"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_history_information_button"
+        android:scaleType="fitXY"
+        android:src="@drawable/information" />
+
+    <Button
+        android:id="@+id/_historyInformation"
+        android:layout_width="133.33dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/list_view_history"
+        android:layout_toEndOf="@+id/button_history_back"
+        android:layout_toRightOf="@+id/button_history_back"
+        android:background="#00000000"
+        android:onClick="showHistoryInformationDialog" />
+
+    <ImageButton
+        android:id="@+id/historyTrash"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/list_view_history"
+        android:layout_marginLeft="62.5dp"
+        android:layout_marginStart="62.5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/historyInformation"
+        android:layout_toRightOf="@+id/historyInformation"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_history_trash_button"
+        android:scaleType="fitXY"
+        android:src="@drawable/trash" />
+
+    <Button
+        android:id="@+id/_historyTrash"
+        android:layout_width="133.33dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/list_view_history"
+        android:layout_toEndOf="@+id/_historyInformation"
+        android:layout_toRightOf="@+id/_historyInformation"
+        android:background="#00000000"
+        android:onClick="showTrashDialog" />
+</RelativeLayout>

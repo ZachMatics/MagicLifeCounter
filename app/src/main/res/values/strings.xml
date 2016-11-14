@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MagicLifeCounter</string>
+    <string name="symbol_plus">+</string>
+    <string name="symbol_minus">-</string>
+    <string name="text_initial_count">20</string>
+    <string name="text_initial_poison_count">Poison: 0</string>
+    <string name="history_information_dialog">\t This history feature records both players\' respective
+    life and poison counts. Historical alterations are only made once a player has started and stopped their
+        respective turn. Consequently, history alterations are only made when the turn-timer feature is utilized.
+       \n \n \t To find
+    the beginning of the current game, look for the entry in which the counts were last reset. This
+    is, of course, easier if prior entries are deleted between games. Data deletion is achieved with
+    the trash icon located on the bottom right of the history menu.</string>
+    <string name="history_delete_dialog">Deleting your history will also reset the current game.
+        Are you sure you want to delete your history?</string>
+    <string name="app_feedback"> If you have any questions or suggestions regarding this app please
+        send them to: ZmitchApps@gmail.com</string>
+    <string name="initial_poison_count">Poison: 0</string>
+    <string name="initial_turn_button_text">Start Match</string>
+    <string name="initial_timer_text">0:00</string>
+    <string name="poison_text_default_count">Poison: </string>
+    <string name="PREF_FILE">APP_PREF_FILE </string>
+    <string name="TOAST_TOGGLE">APP_TOAST_TOGGLE </string>
+    <string name="TURN_TIMER_TOGGLE">APP_TURN_TIMER_TOGGLE </string>
+    <string name="PLAYER_NAMES_TOGGLE">APP_PLAYER_NAMES_TOGGLE </string>
+    <string name="VIBRATION_TOGGLE">APP_VIBRATION_TOGGLE </string>
+    <string name="TOP_THEME">APP_TOP_THEME </string>
+    <string name="BOTTOM_THEME">APP_BOTTOM_THEME </string>
+    <string name="POISON_TOP_OPEN">APP_POISON_TOP </string>
+    <string name="POISON_BOTTOM_OPEN">APP_POISON_BOTTOM </string>
+    <string name="STARTING_LIFE_COUNT">APP_STARTING_LIFE_COUNT </string>
+    <string name="TOP_SCORE">APP_TOP_SCORE </string>
+    <string name="BOTTOM_SCORE">APP_BOTTOM_SCORE </string>
+    <string name="TOP_POISON_COUNT">APP_TOP_POISON_COUNT </string>
+    <string name="BOTTOM_POISON_COUNT">APP_BOTTOM_POISON_COUNT </string>
+    <string name="TOP_PLAYER_TIME">APP_TOP_PLAYER_TIME </string>
+    <string name="BOTTOM_PLAYER_TIME">APP_BOTTOM_PLAYER_TIME </string>
+    <string name="TOP_PLAYER_SECONDS">APP_TOP_PLAYER_SECONDS </string>
+    <string name="BOTTOM_PLAYER_SECONDS">APP_BOTTOM_PLAYER_SECONDS </string>
+    <string name="LAST_TOP_TURN_TIME">APP_LAST_TOP_TURN_TIME </string>
+    <string name="LAST_BOTTOM_TURN_TIME">APP_LAST_BOTTOM_TURN_TIME </string>
+    <string name="CURRENT_TIME_INTERVAL">APP_CURRENT_TIME_INTERVAL </string>
+    <string name="TURN_NUMBER">APP_TURN_NUMBER </string>
+    <string name="TOP_NAME">APP_TOP_NAME </string>
+    <string name="BOTTOM_NAME">APP_BOTTOM_NAME </string>
+    <string name="AD_SHOW">APP_AD_SHOW </string>
+
+
+</resources>

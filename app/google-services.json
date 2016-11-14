@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "330651568512",
+    "firebase_url": "https://magic-life-counter-app.firebaseio.com",
+    "project_id": "magic-life-counter-app",
+    "storage_bucket": "magic-life-counter-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330651568512:android:cc49107b30745612",
+        "android_client_info": {
+          "package_name": "com.zacharymitchell.magiclifecounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330651568512-edfj7if63j5vhp9jhm6bud8k8sgerach.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3_rPmjoTdPJYLLScB-BeoPcVcKSRrPyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
