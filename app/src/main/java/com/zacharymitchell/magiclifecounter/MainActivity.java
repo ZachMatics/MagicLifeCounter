@@ -36,10 +36,10 @@ import android.widget.ToggleButton;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.zacharymitchell.magiclifecounter.ui.ElementPicker;
 
 import java.util.ArrayList;
 import java.util.Random;
-
 
 public class MainActivity extends AppCompatActivity implements TrashDialog.Commincator {
 
@@ -452,6 +452,35 @@ public class MainActivity extends AppCompatActivity implements TrashDialog.Commi
         rateApp();
 
         testbottomCount = (TextView) findViewById(R.id.bottomCount);
+
+        ElementPicker picker = (ElementPicker) findViewById(R.id.element_picker_view);
+        picker.setElementPickListener(new ElementPicker.ElementPickListener() {
+            @Override
+            public void onElementPick(ElementPicker.Elements element) {
+                switch(element)
+                {
+                    case Red:
+                        Toast.makeText(getApplicationContext(), "Red", Toast.LENGTH_SHORT).show();
+                        break;
+                    case Green:
+                        Toast.makeText(getApplicationContext(), "Green", Toast.LENGTH_SHORT).show();
+                        break;
+                    case White:
+                        Toast.makeText(getApplicationContext(), "White", Toast.LENGTH_SHORT).show();
+                        break;
+                    case Blue:
+                        Toast.makeText(getApplicationContext(), "Blue", Toast.LENGTH_SHORT).show();
+                        break;
+                    case Black:
+                        Toast.makeText(getApplicationContext(), "Black", Toast.LENGTH_SHORT).show();
+                        break;
+                    case Poison:
+                        Toast.makeText(getApplicationContext(), "Poison", Toast.LENGTH_SHORT).show();
+                        break;
+                    default:
+                }
+            }
+        });
 
 
     }

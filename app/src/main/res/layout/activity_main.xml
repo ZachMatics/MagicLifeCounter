@@ -8,6 +8,8 @@
     tools:context="com.zacharymitchell.magiclifecounter.MainActivity">
 
 
+
+
     <ImageButton
         android:id="@+id/button_resume_dice"
         android:layout_width="match_parent"
@@ -90,5 +92,12 @@
 
     </FrameLayout>
 
+
+
+    <com.zacharymitchell.magiclifecounter.ui.ElementPicker
+        android:id="@+id/element_picker_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.zacharymitchell.magiclifecounter.ui.ElementPicker>
 
 </FrameLayout>

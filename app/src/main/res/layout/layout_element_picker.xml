@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/element_picker"
+    android:layout_width="310dp"
+    android:layout_height="220dp"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/layout_theme_menu">
+
+    <ImageView
+        android:id="@+id/red_circle_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_red" />
+
+    <Button
+        android:id="@+id/red_circle_button"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:background="#00000000"
+        />
+
+    <ImageView
+        android:id="@+id/green_circle_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/red_circle_view"
+        android:layout_toRightOf="@id/red_circle_button"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_green" />
+
+    <Button
+        android:id="@+id/green_circle_button"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_toEndOf="@+id/red_circle_button"
+        android:background="#00000000"
+        android:layout_toRightOf="@+id/red_circle_button" />
+
+    <ImageView
+        android:id="@+id/white_circle_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/green_circle_view"
+        android:layout_toRightOf="@id/green_circle_view"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_white" />
+
+    <Button
+        android:id="@+id/white_circle_button"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_toEndOf="@+id/green_circle_button"
+        android:layout_toRightOf="@+id/green_circle_button"
+        android:background="#00000000"
+        />
+
+    <ImageView
+        android:id="@+id/blue_circle_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/red_circle_view"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_blue" />
+
+    <Button
+        android:id="@+id/blue_circle_button"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/red_circle_button"
+        android:background="#00000000" />
+
+    <ImageView
+        android:id="@+id/black_circle_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/red_circle_view"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/blue_circle_view"
+        android:layout_toRightOf="@+id/blue_circle_view"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_black" />
+
+    <Button
+        android:id="@+id/black_circle_button"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/green_circle_button"
+        android:layout_toEndOf="@+id/blue_circle_button"
+        android:layout_toRightOf="@+id/blue_circle_button"
+        android:background="#00000000"
+        />
+
+    <Button
+        android:id="@+id/poison_circle_button"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/white_circle_button"
+        android:layout_toEndOf="@+id/black_circle_button"
+        android:layout_toRightOf="@+id/black_circle_button"
+        android:background="#00000000"
+        />
+
+    <ImageView
+        android:id="@+id/anim_dice_dot_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_dice_dot_center"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/poison_circle_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_poison_front"
+        android:layout_below="@+id/anim_dice_dot_view"
+        android:layout_alignLeft="@+id/white_circle_view"
+        android:layout_alignStart="@+id/white_circle_view" />
+
+</RelativeLayout>
